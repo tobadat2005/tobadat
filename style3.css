@@ -1,0 +1,52 @@
+h1,
+h2,
+h3 {
+  color: rgb(76, 175, 80);
+}
+a {
+  color: black;
+}
+a:hover {
+  color: rgb(76, 175, 80);
+}
+body {
+  font-family: "Verdana";
+}
+.menu li {
+  float: left;
+  width: 15%;
+  background-color: rgb(85, 85, 85);
+  margin-left: 4px;
+  margin-right: 4px;
+  list-style-type: none;
+  align-items: center;
+}
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.menu a:hover {
+  background-color: black;
+}
+.menu ul {
+  clear: right;
+}
+#flag {
+  clear: left;
+}
+.menu .menu3 {
+  background-color: rgb(76, 175, 80);
+}
+.side_bar {
+  background-color: rgb(241, 241, 241);
+  border: 2px solid rgb(212, 212, 212);
+  padding-left: 10px;
+}
+.footer {
+  text-align: center;
+  font-size: 14px;
+}
