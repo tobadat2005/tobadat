@@ -11,13 +11,14 @@ a:hover {
 }
 body {
   font-family: "Verdana";
+  margin: 0;
+  padding: 0;
 }
 .menu li {
   float: left;
   width: 15%;
   background-color: rgb(85, 85, 85);
-  margin-left: 4px;
-  margin-right: 4px;
+  margin: auto 0.5rem;
   list-style-type: none;
   align-items: center;
 }
@@ -26,8 +27,8 @@ body {
   text-align: center;
   display: block;
   color: white;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 0, 5rem;
+  padding-bottom: 0.5rem;
 }
 .menu a:hover {
   background-color: black;
@@ -43,10 +44,58 @@ body {
 }
 .side_bar {
   background-color: rgb(241, 241, 241);
-  border: 2px solid rgb(212, 212, 212);
-  padding-left: 10px;
+  border: 1px solid rgb(212, 212, 212);
+  padding: 0.2rem 1rem;
 }
 .footer {
   text-align: center;
-  font-size: 14px;
+  font-size: 0.8rem;
+}
+/* Đáp ứng trên màn hình nhỏ */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Chuyển menu sang dạng cột */
+  }
+
+  .menu li {
+    flex: none; /* Bỏ căn đều các mục menu */
+    width: 80%; /* Mỗi mục chiếm toàn bộ chiều ngang */
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .side_bar {
+    margin: 5px; /* Thu hẹp khoảng cách */
+  }
+
+  .footer {
+    font-size: 12px; /* Chữ nhỏ hơn trên thiết bị nhỏ */
+  }
+}
+
+/* Đáp ứng trên màn hình rất nhỏ */
+@media (max-width: 480px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1.2rem; /* Thu nhỏ kích thước tiêu đề */
+  }
+
+  .menu li {
+    padding: 5px; /* Giảm kích thước menu */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .side_bar {
+    padding: 8px; /* Giảm khoảng cách bên trong sidebar */
+  }
+
+  .footer {
+    font-size: 10px; /* Giảm kích thước chữ footer */
+  }
 }
